@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+  background-image: url('./Assets/Images/christoffer-engstrom-8NuHwPbO62k-unsplash.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center;  
+}
+
+nav{
+    width: 100%;
+    height: 15%;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    padding: 15px;
+}
+
+.logo-div{
+    background-color: aqua;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ul-div{
+    background-color: lightgreen;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul{
+    /* background-color: blue; */
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li{
+    background-color: lightpink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li a{
+    text-decoration: none;
+}
+
+main{
+    /* background-color: lightseagreen; */
+    height: 80%; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card1, .card2, .card3{
+    padding: 5px;
+    height: 50%;
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  /*  Navigation adjustments */
+  nav {
+    flex-direction: row;
+    height: auto;           
+    align-items: center;
+  }
+
+  .logo-div {
+    width: 15%;
+    margin-bottom: 10px;
+  }
+
+  .ul-div {
+    width: 100%;
+    justify-content: center;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: ; */
+    padding: 20px;
+  }
+
+  .card1, .card2, .card3 {
+    width: 50%;  
+    height: 60%;
+    margin-bottom: 20px;
+  }
+
+p {
+    font-size: 14px;
+}
+
+.li-anchor{
+    display: none;
+}
+.li-svg{
+    display: block;
+}
+
+}
+

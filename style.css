@@ -8,10 +8,10 @@ html, body {
 }
 
 body{
-  /* background-image: url('./Assets/Images/christoffer-engstrom-8NuHwPbO62k-unsplash.jpg');
+  background-image: url('./Assets/Images/christoffer-engstrom-8NuHwPbO62k-unsplash.jpg');
   background-size: cover; 
   background-repeat: no-repeat; 
-  background-position: center;   */
+  background-position: center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -72,9 +72,11 @@ li a{
     color: black;
   }
     
-li a:hover {
+/* li a:hover {
   font-size: 20px;
 }
+
+*/
     
 .li-anchor {
   display: block;
@@ -101,7 +103,7 @@ li a:hover {
 }
 
 main{
-  background-color: rgb(32, 178, 83);
+  /* background-color: rgb(32, 178, 83); */
     /* height: 70%; */
     display: flex;
     justify-content: space-evenly;
@@ -188,24 +190,26 @@ nav {
 
 }
 
-@media (max-width:425px) {
+@media screen and (max-width:425px) {
 
   body{
     min-height: 100vh;
+    background-size: auto;
   }
 
   .card{
   height: 250px;
   width: 200px;
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 footer{
-  font-size: 21px;
+  min-height: 50px;
+    font-size: 16px;
 }
 
 }
 
-@media (max-width:320px) {
+@media screen and (max-width:320px) {
 
   html,
   body {
@@ -214,50 +218,81 @@ footer{
   }
 
   .card{
-  height: 280px;
-  width: 200px;
-  font-size: 0.85em;
+  /* height: 280px;
+    width: 200px; */
+    height: 275px;
+    width: 210px;
+    font-size: 0.9em;
  }
 }
 
-/* @media (min-width:1441px) and (max-width:3840px) {
-
-nav{
-  height: 250px;
+@media screen and (min-width:1025px) and (max-width:1440px) {
+  main {
+      /* flex: none; */
+      padding: 10px;
+      height: 71%;
+    }
+  
+    footer {
+      height: 80px;
+      padding: 20px 0;
+    }
+  
+  }
+  
+  @media screen and (max-width:1024px) {
+    .card {
+      height: 305px;
+      width: 226px;
+    }
 }
+    @media(min-width:1552px) and (max-width:2560px) {
 
-main{
-  height: calc(100% - 483px);
+nav {
+    min-height: 60px;
 }
 
 .menu{
-  font-size: 5em;
+  font-size: 2.5em;
 }
 
 .logo-text{
-  font-size: 5em;
+  font-size: 2.5em;
 }
 
   .card{
 
-  height: 950px;
-  width: 700px;
-  font-size: 2.5em;
+  height: 682px;
+  width: 488px;
+  font-size: 2.0em;
   }
 
+    main {
+      padding: 10px;
+      height: 60%;
+    }
+  
+  
+    main img {
+      width: 80px;
+    }
   .card h2{
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
 
   .card p{
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
 
   li a{
-    font-size: 5em;
-}
+    font-size: 2.5em;
+    }
+    
+    footer {
+      height: 144px;
+    }
 
 footer p {
-  font-size: 5em;
+  font-size: 2.5em;
 }
-} */
+}
